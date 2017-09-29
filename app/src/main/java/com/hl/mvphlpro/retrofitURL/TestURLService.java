@@ -13,8 +13,6 @@ import retrofit2.http.Query;
  */
 
 public interface TestURLService {
-//    @GET("/ZJWAPPproject/Android/SelGZZAndMT.action")
-//    Call<ResponseBody> getGZZ(@Query("id") String id);
 
     @GET("book/search")
     Call<BookSearchResponse> getSearchBooks(@Query("q") String name,
